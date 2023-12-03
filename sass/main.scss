@@ -1,0 +1,125 @@
+@use 'colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    color: $font-color-dark;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+	// font-family: 'Big Shoulders Stencil Display', sans-serif;
+	font-family: 'Comfortaa', sans-serif;
+	background-color: $bg-color-dark;
+    color: $font-color-dark;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    width: 400px;
+    height: 100%;
+    // background-color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 3em;
+    width: 100%;
+    background-color: $bg-color-light;
+    border-radius: 10px;
+}
+
+.settings {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    // background-color: black;
+    .icon {
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.heading {
+font-size: 2rem;
+}
+
+.time {
+    margin-top: .1em;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    color: $secondary-color;
+}
+
+.last-time-text {
+    font-size: 1.2rem;
+    .last-time-number{
+        color: $secondary-color;
+        font-weight: bold;
+    }
+}
+
+.buttons-menu {
+    margin-top: 2em;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    .btn-archives {
+        grid-column: 1/5;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        padding: 5px 20px;
+        color: $secondary-color;   
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:hover {
+            border: 1px solid $main-color;
+            color: $main-color;
+            .fa-solid {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+.history {
+
+    padding: 2em;
+    margin-top: 1em;
+    .measurement {
+        display: flex;
+        justify-content: space-between;
+        margin: .4em;
+        padding: 0 1em 0.6em 1em;
+        width: 100%;
+        border-bottom: 1px solid $secondary-color;
+        display: flex;
+        &_heading {
+            font-weight: bold;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
