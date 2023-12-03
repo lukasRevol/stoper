@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #3e393e;
+  color: #543b54;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   height: 100vh;
   font-family: "Comfortaa", sans-serif;
   background-color: #0d1317;
-  color: #3e393e;
+  color: #543b54;
 }
 
 .wrapper {

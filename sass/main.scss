@@ -48,7 +48,7 @@ body {
         padding: 10px;
         cursor: pointer;
         &:hover {
-            color: $main-color;
+            color: $main-color; 
         }
     }
 }
@@ -62,7 +62,7 @@ font-size: 2rem;
     font-size: 6rem;
     font-weight: bold;
     font-family: 'Big Shoulders Stencil Display', sans-serif;
-    color: $secondary-color;
+    color: $secondary-color; 
 }
 
 .last-time-text {
@@ -124,3 +124,4 @@ font-size: 2rem;
 .hide {
     display: none;
 }
+
